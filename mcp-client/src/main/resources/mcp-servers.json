@@ -1,0 +1,25 @@
+{
+    "mcpServers" : {
+        "filesystem" : {
+            "command" : "npx",
+            "args" : [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/home/hp/Agentic-AI-et-MCP/mcp-demo-spring-python2"
+            ]
+        },
+        "Python_MCP_Server" : {
+            "command" : "uv",
+            "args" : [
+                "run",
+                "--with",
+                "mcp[cli]",
+                "mcp",
+                "run",
+                "/home/hp/Agentic-AI-et-MCP/mcp-demo-spring-python2/python-mcp-server/server.py"
+            ]
+        }
+        
+    }
+}
+
